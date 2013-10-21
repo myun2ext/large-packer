@@ -3,6 +3,9 @@
 
 namespace myun2
 {
+	namespace yaml
+	{
+	}
 }
 
 #endif//__github_com_myun2__yaml__parse_HPP__
