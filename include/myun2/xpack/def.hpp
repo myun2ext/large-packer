@@ -5,7 +5,8 @@ namespace myun2
 {
 	namespace xpack
 	{
-		class def
+		template <typename T=unsigned int>
+		struct def
 		{
 		};
 	}
