@@ -5,10 +5,11 @@ namespace myun2
 {
 	namespace xpack
 	{
-		template <unsigned int _BitLength, unsigned int _Prefix>
+		template <typename T, unsigned int _BitLength, unsigned int _Prefix>
 		struct prefix {
-			static const unsigned int length = _BitLength;
-			static const unsigned int value = _Prefix;
+			typedef T type;
+			static const T length = _BitLength;
+			static const T value = _Prefix;
 		};
 	}
 }
