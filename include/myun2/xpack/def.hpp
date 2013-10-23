@@ -5,11 +5,11 @@ namespace myun2
 {
 	namespace xpack
 	{
-		template <typename T, T _Mask, T _FixedCount>
+		template <typename _PrefixType, _PrefixType _Prefix, typename _ValueType>
 		struct def {
-			typedef T type;
-			static const T mask = _Mask;
-			static const T fixed_count = _FixedCount;
+			typedef _PrefixType prefix_type;
+			static const _PrefixType prefix = _Prefix;
+			typedef _ValueType value_type;
 		};
 	}
 }
