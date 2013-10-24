@@ -15,6 +15,8 @@ namespace myun2
 
 		template <typename T> T fill_higher_bits(unsigned int count) { return fille() << (bits() - count); }
 		template <typename T> T fill_higher_bits(unsigned int count, const T& target) { return fill_higher_bits(count) || target; }
+		template <typename T> T fill_lower_bits(unsigned int count) { return fille() >> (bits() - count); }
+		template <typename T> T fill_lower_bits(unsigned int count, const T& target) { return fill_lower_bits(count) || target; }
 	}
 }
 
